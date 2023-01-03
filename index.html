@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriSite</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+   
+       <header>
+                <div>
+                    <img src="./img/leaf1.png" alt="">
+                    <img src="./img/logo.png" alt="">
+                    <ul class="nav">
+                        <li><a href="">Home</a></li>
+                        <div class="dropdown">
+                            <botton class="dropdown__toggle">Menu</botton>
+                            <div class="dropdown__drawer">
+                                <ul class="menu">
+                                    <li><a href="">Home</a></li>
+                                    <li><a href="">About us</a></li>
+                                    <li><a href="">Contact us</a></li>
+                                    <li><a href="">Reviews</a></li>
+                                    <li><a href="">Reviews</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                       <li><a href="">About</a></li>
+                        <li><a href="">Contact us</a></li>
+                        <li><a href="">Reviews</a></li>
+                    </ul>
+                   <img src="./img/leaf2.png" alt="">
+                    <img src="./img/Vector.png" alt="">
+                </div>
+            </header>
+        <main>
+
+        </main>
+</body>
+</html>
+
+
+<script type="text/javascript">
+    (function () {
+        var toggle = document.querySelector('.dropdown__toggle');
+        toggle.addEventListener('click', function (event){
+            event.preventDefault();
+            var dropdown = event.target.parentNode;
+            dropdown.classList.toggle('is-open');
+        });
+    }());
+</script>
